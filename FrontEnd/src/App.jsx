@@ -5,7 +5,7 @@ import Footer from "./Components/Footer/Footer";
 import InputForm from "./Components/InputForm/InputForm";
 import { useState } from "react";
 import backgroundImage from "./Components/BackGround/BackGround.jpg";
-import Authentication from './Components/Authentication/Authentication';
+import Authentication from "./Components/Authentication/Authentication";
 
 function App() {
   const [isInputFormPage, setIsInputFormPage] = useState(false);
@@ -32,7 +32,7 @@ function App() {
           zIndex: -1,
         }}
       ></div>
-      <>
+      {/* <>
         <NavBarWrapper
           style={{ borderRadius: "10px" }}
           onInputFormClick={handleInputFormClick}
@@ -42,14 +42,11 @@ function App() {
           isInputFormPage={isInputFormPage}
         />
         <Footer />
-      </>
-
-
-
+      </> */}
 
       {/* LOGIN / SIGNUP */}
 
-      {/* <Authentication /> */}
+      <Authentication />
     </>
   );
 }
