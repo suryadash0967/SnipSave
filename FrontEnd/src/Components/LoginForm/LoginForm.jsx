@@ -14,7 +14,12 @@ export default function LoginForm() {
         email,
         password,
       });
-      console.log("Response:", response.data);
+      if (response.data) {
+        localStorage.setItem("token", response.data.token);
+        console.log("Token saved:", response.data.token);
+      } else {
+        console.error("Unexpected response format:", response.data);
+      }
     } catch (err) {
       console.error("Error:", err.response ? err.response.data : err);
     }

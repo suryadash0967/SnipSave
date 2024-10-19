@@ -32,7 +32,7 @@ function App() {
           zIndex: -1,
         }}
       ></div>
-      {/* <>
+      <>
         <NavBarWrapper
           style={{ borderRadius: "10px" }}
           onInputFormClick={handleInputFormClick}
@@ -42,11 +42,11 @@ function App() {
           isInputFormPage={isInputFormPage}
         />
         <Footer />
-      </> */}
+      </>
 
       {/* LOGIN / SIGNUP */}
 
-      <Authentication />
+      {/* <Authentication /> */}
     </>
   );
 }

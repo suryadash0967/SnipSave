@@ -16,6 +16,7 @@ export const signup = async (req, res) => {
       expiresIn: "1d",
     });
     const userDetails = await User.findById(NewUser._id).select("-password");
+
     res
       .status(201)
       .json({ token, user: userDetails, message: "User created successfully" });
