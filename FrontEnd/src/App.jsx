@@ -5,7 +5,7 @@ import Footer from "./Components/Footer/Footer";
 import InputForm from "./Components/InputForm/InputForm";
 import { useState } from "react";
 import backgroundImage from "./Components/BackGround/BackGround.jpg";
-import Authentication from './Components/Authentication/Authentication';
+import Authentication from "./Components/Authentication/Authentication";
 
 function App() {
   const [isInputFormPage, setIsInputFormPage] = useState(false);
@@ -43,9 +43,6 @@ function App() {
         />
         <Footer />
       </>
-
-
-
 
       {/* LOGIN / SIGNUP */}
 
